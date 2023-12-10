@@ -9,4 +9,7 @@
 
 ## Pour relancer les machines :
 ### Pour metasploitable2 :
-    docker rm metasploitable2
+    docker rm metasploitable && docker run -it --network host --name metasploitable     --hostname metasploitable2     tleemcjr/metasploitable2 bash
+
+### Pour metasploitable3 :
+### On crée une snapshot directement sur VirtualBox pour pouvoir la recloner si jamais il y a un défaut.
